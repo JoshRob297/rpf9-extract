@@ -1,0 +1,17 @@
+[package]
+name = "rpf9"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.88"
+description = "Inspect and extract RPF9 (9FPR) archives"
+readme = "README.md"
+keywords = ["rpf", "archive", "extract", "carving"]
+categories = ["command-line-utilities"]
+
+[dependencies]
+flate2 = "1"
+memmap2 = "0.9"
+
+[profile.release]
+lto = true
+codegen-units = 1
